@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main() {
+    float temp;
+    int choice;
+    printf("1. Celsius to Fahrenheit\n2. Fahrenheit to Celsius\n");
+    printf("Enter your choice: ");
+    scanf("%d", &choice);
+    switch(choice) {
+        case 1:
+            printf("Enter temperature in Celsius: ");
+            scanf("%f", &temp);
+            temp = (temp * 9/5) + 32;
+            printf("Temperature in Fahrenheit: %.2f\n", temp);
+            break;
+        case 2:
+            printf("Enter temperature in Fahrenheit: ");
+            scanf("%f", &temp);
+            temp = (temp - 32) * 5/9;
+            printf("Temperature in Celsius: %.2f\n", temp);
+            break;
+        default:
+            printf("Invalid choice!\n");
+    }
+   return 0;
+}

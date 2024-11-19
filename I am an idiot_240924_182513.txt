@@ -1,0 +1,6 @@
+#include <stdio.h>
+int main() {
+    char arr[] = "I AM IDIOT";
+    printf("%s\n", arr);
+    return 0;
+}
